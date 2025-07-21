@@ -14,9 +14,9 @@ Este é um projeto Java padrão e não requer dependências externas. Para compi
 A estrutura de diretórios para este projeto é a seguinte, com a classe cliente no pacote padrão:
 
 ```
-/CineTechProject
+/padroes-projeto-ifs
 |-- src
-|   |-- HomeTheater.java  <-- Classe cliente no pacote padrão
+|   |-- HomeTheater.java
 |   `-- com
 |       `-- solutions
 |           `-- ifs
@@ -30,7 +30,7 @@ A estrutura de diretórios para este projeto é a seguinte, com a classe cliente
 ```
 
 ### 1. Compilação
-Navegue até o diretório raiz do projeto (`CineTechProject`). O comando a seguir compila todos os arquivos `.java` dentro do diretório `src` e coloca os arquivos `.class` compilados no diretório `out`, mantendo a estrutura de pacotes.
+Navegue até o diretório raiz do projeto (`padroes-projeto-ifs`). O comando a seguir compila todos os arquivos `.java` dentro do diretório `src` e coloca os arquivos `.class` compilados no diretório `out`, mantendo a estrutura de pacotes.
 
 ```bash
 javac -d out src/**/*.java
