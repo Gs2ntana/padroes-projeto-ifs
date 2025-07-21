@@ -10,37 +10,37 @@ Este é um projeto Java padrão e não requer dependências externas. Para compi
 ### Pré-requisitos
 * JDK (Java Development Kit) 11 ou superior instalado e configurado no `PATH`.
 
-### Estrutura de Diretórios (Exemplo)
-Assumindo que seus arquivos `.java` estão organizados dentro de um diretório `src`:
+### Estrutura de Diretórios
+A estrutura de diretórios para este projeto é a seguinte, com a classe cliente no pacote padrão:
+
 ```
 /CineTechProject
 |-- src
+|   |-- HomeTheater.java  <-- Classe cliente no pacote padrão
 |   `-- com
 |       `-- solutions
 |           `-- ifs
 |               `-- cinetech
-|                   |   `-- HomeTheater.java
 |                   |-- facade
 |                   |   `-- HomeTheaterFacade.java
 |                   `-- subsystem
 |                       |-- AudioPlayer.java
-|                       |-- Lights.java
 |                       |-- etc...
 |-- out/
 ```
 
 ### 1. Compilação
-Navegue até o diretório raiz do projeto (`CineTechProject`) e execute o comando de compilação. Ele irá gerar os arquivos `.class` no diretório `out`.
+Navegue até o diretório raiz do projeto (`CineTechProject`). O comando a seguir compila todos os arquivos `.java` dentro do diretório `src` e coloca os arquivos `.class` compilados no diretório `out`, mantendo a estrutura de pacotes.
 
 ```bash
-javac -d out src/com/solutions/ifs/cinetech/**/*.java
+javac -d out src/**/*.java
 ```
 
 ### 2. Execução
-Execute a aplicação a partir do diretório `out`, especificando o `classpath` para a classe principal.
+Execute a aplicação a partir do diretório raiz, especificando o `classpath` para o diretório de saída (`out`). Como `HomeTheater.java` está no pacote padrão, seu nome é invocado diretamente.
 
 ```bash
-java -cp out com.solutions.ifs.cinetech.client.HomeTheater
+java -cp out HomeTheater
 ```
 Após a execução, um menu interativo será apresentado no console, permitindo que você utilize as funcionalidades do sistema de home theater.
 
