@@ -1,4 +1,5 @@
 # CineTech Home Theater - Implementação do Padrão Facade
+### Aluno: Gustavo Anthony
 
 Este projeto é uma simulação em Java de um sistema de home theater inteligente, desenvolvido como uma aplicação prática do **Padrão de Projeto Facade**. O objetivo é demonstrar como uma fachada (`HomeTheaterFacade`) pode simplificar a interação com um conjunto complexo de subsistemas, oferecendo ao cliente uma interface unificada e de alto nível.
 
